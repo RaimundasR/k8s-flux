@@ -3,7 +3,10 @@ kind: HelmRepository
 metadata:
   name: podinfo
   namespace: podinfo-test
-  url: https://stefanprodan.github.io/podinfo
+spec:
+  url: https://charts.example.com   # ✅ Correct placement
+  interval: 10m0s
+
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
