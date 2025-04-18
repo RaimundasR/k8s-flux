@@ -18,7 +18,6 @@ spec:
         kind: HelmRepository
         name: podinfo
       version: '>=6.0.0'
-  interval: 10m0s
   values:
     replicaCount: 2
     ingress:
