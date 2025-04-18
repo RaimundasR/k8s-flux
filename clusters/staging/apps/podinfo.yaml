@@ -19,6 +19,7 @@ metadata:
   name: podinfo
   namespace: podinfo-test
 spec:
+  interval: 5m              # ✅ Required!
   chart:
     spec:
       chart: podinfo
@@ -27,7 +28,7 @@ spec:
         name: podinfo
       version: '>=6.0.0'
   values:
-    replicaCount: 2
+    replicaCount: 1
     ingress:
       enabled: true
       className: "public"
@@ -36,4 +37,3 @@ spec:
           paths:
             - path: /
               pathType: Prefix
-
