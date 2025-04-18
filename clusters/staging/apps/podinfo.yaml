@@ -9,7 +9,7 @@ metadata:
   name: podinfo
   namespace: podinfo-test
 spec:
-  url: https://charts.example.com
+  url: https://stefanprodan.github.io/podinfo
   interval: 10m0s
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
