@@ -3,7 +3,6 @@ kind: HelmRepository
 metadata:
   name: podinfo
   namespace: podinfo-test
-  interval: 10m0s
   url: https://stefanprodan.github.io/podinfo
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2
