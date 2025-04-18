@@ -1,6 +1,0 @@
-values:
-  controller:
-    ingress:
-      enabled: true
-    adminPassword: "admin"
-    serviceType: LoadBalancer
